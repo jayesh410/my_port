@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jayesh Pandhare | UI/UX Designer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #d4b07a;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+      width: 100%;
+    }
+
+    .left, .right {
+      width: 40%;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #000;
+    }
+
+    .center {
+      width: 20%;
+      background-color: #d4b07a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    .left nav, .right nav {
+      margin-bottom: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 1rem;
+      font-weight: 500;
+    }
+
+    .intro h1 {
+      font-size: 4rem;
+      color: #fff;
+    }
+
+    .intro h2 {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+
+    .intro p {
+      font-size: 1.1rem;
+      margin: 1rem 0;
+      color: #fff;
+    }
+
+    .cv-btn {
+      padding: 0.8rem 1.5rem;
+      background-color: #d4b07a;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .description p {
+      color: #ccc;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .talk-btn {
+      margin-top: 1.5rem;
+      display: inline-block;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    .talk-btn::after {
+      content: " ➜";
+    }
+
+    .circle-logo {
+      width: 120px;
+      height: 120px;
+      background: #000;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #d4b07a;
+      border: 4px solid #fff;
+      box-shadow: 0 0 20px 5px #d4b07a88;
+    }
+
+    .circle-text {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      text-align: center;
+      color: #d4b07a;
+      border: 1px solid #d4b07a33;
+      border-radius: 50%;
+      width: 130px;
+      height: 130px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 0 15px #d4b07a55;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left, .right, .center {
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Left Section -->
+    <div class="left">
+      <nav>
+        <a href="#">About me</a>
+        <a href="#">Service</a>
+      </nav>
+      <div class="intro">
+        <h1>Hello</h1>
+        <h2>- I am <span style="color: #d4b07a;">Jayesh Pandhare</span></h2>
+        <p>Professional UI/UX Designer</p>
+        <button class="cv-btn">⬇️ Download CV</button>
+      </div>
+    </div>
+
+    <!-- Center Logo -->
+    <div class="center">
+      <div class="circle-logo">JP</div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right">
+      <nav>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="description">
+        <p>I am a UI/UX Designer. My specialty lies in the pre-production design process. That’s creativity in determining the design that fits the company’s goals.</p>
+        <a href="#" class="talk-btn">Lets Talk</a>
+        <div class="circle-text">UI/UX Process • Research •</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
