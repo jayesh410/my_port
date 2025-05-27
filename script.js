@@ -14,3 +14,13 @@ function scrollServices(direction) {
     behavior: 'smooth'
   });
 }
+  const items = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    items.forEach(item => observer.observe(item));
